@@ -94,10 +94,10 @@ int main(void)
 
 
     	// SystemCoreClockUpdate();
-    			//  SysTick_Config(SystemCoreClock/10000);      /* Generate interrupt each 10 ms  */
+    			//  SysTick_Config(SystemCoreClock/1000);      /* Generate interrupt each 10 ms  */
 
     	CLEAR_BIT(GPIOB->ODR, GPIO_ODR_ODR_14 );
-    		CLEAR_BIT(GPIOB->ODR, GPIO_ODR_ODR_7);
+    		CLEAR_BIT(GPIOB->ODR, GPIO_ODR_ODR_0);
     	while(1)
     	{
     ;
