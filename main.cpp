@@ -57,8 +57,8 @@ int main(void)
   }
   SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOCEN );
     	SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOBEN );
-    	SET_BIT(GPIOB->MODER, GPIO_MODER_MODER14_855 );
-    	SET_BIT(GPIOB->MODER, GPIO_MODER_MODER7_266 );
+    	SET_BIT(GPIOB->MODER, GPIO_MODER_MODER14_8 );
+    	SET_BIT(GPIOB->MODER, GPIO_MODER_MODER7_ );
 
     	 SystemCoreClockUpdate();
     	SysTick_Config(0xFFFF);      /* Generate interrupt each 10 ms  */
